@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>9월21일 폼 학습</title>
+    </head>
+    <body>
+        <form name="testform" method="post" action="process.php" enctype="multipart/form-data">
+            텍스트: <input type="text" name="myid"><br>
+            전화번호: <input type="tel" name="myphone"><br>
+            넘버: <input type="number" name="myselect" min="2" max="10" step="2" value="5"><br>
+            URL : <input type="url" name="myaddr"><br>
+            검색: <input type="search" name="검색"><br>
+            이메일: <input type="email" name="myemail"><br>
+            파일 첨부 : <input type="file" name="fileupload"><br>
+            데이터 숨기기 : <input type="hidden" name="page" value="2"><br>
+            생년월일 : <input type="date" name="mybirth"><br>
+            월 : <input type="month" name="mymonth"><br>
+            주 : <input type="week" name="myweek"><br>
+            시간 : <input type="time" name="mytime"><br>
+            범위 : <input type="range" name="myscope"><br>
+            <input type="submit" value="확인"> <input type="button" value="Check">
+            <input type="image" src="./Images/button.jpg">
+         </form>
+    </body>
+</html>
