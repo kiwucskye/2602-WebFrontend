@@ -6,21 +6,58 @@
     </head>
     <body>
         <form name="testform" method="post" action="process.php" enctype="multipart/form-data">
-            텍스트: <input type="text" name="myid"><br>
-            전화번호: <input type="tel" name="myphone"><br>
+            <label>텍스트: <input type="text" name="myid"></label><br>
+            <label for="mytel">전화번호:</label> <input type="tel" name="myphone"><br>
             넘버: <input type="number" name="myselect" min="2" max="10" step="2" value="5"><br>
             URL : <input type="url" name="myaddr"><br>
             검색: <input type="search" name="검색"><br>
             이메일: <input type="email" name="myemail"><br>
             파일 첨부 : <input type="file" name="fileupload"><br>
             데이터 숨기기 : <input type="hidden" name="page" value="2"><br>
+            <fieldset>
+                <legend>날짜 선택하기</legend>
             생년월일 : <input type="date" name="mybirth"><br>
             월 : <input type="month" name="mymonth"><br>
             주 : <input type="week" name="myweek"><br>
             시간 : <input type="time" name="mytime"><br>
-            범위 : <input type="range" name="myscope"><br>
+            </fieldset>
+            범위 : <input type="range" name="myscope" value="100"><br>
+            범위 : <input type="range" name="myscope" value="5" min="2" max="10" step="2"><br>
+            색상 : <input type="color" name="mycolor"><br>
+            <textarea name="contents" cols="50" rows="5">하고 싶은 이야기 나눠요.</textarea><br>
+            <select name="city">
+                <option value="" selected disabled>--선택하세요--</option>
+                <option value="seoul">서울</option>
+                <option value="d">대전</option>
+                <option value="kw">광주</option>
+                <option value="py">목포</option>
+                <option value="dae">대구</option>
+                <option value="bu">부산</option>
+            </select><br>
+            <select name="color" required multiple>
+                <option value="white">흰색</option>
+                <option value="black">검은색</option>
+                <option value="blue">파란색</option>
+                <option value="red">빨간색</option>
+                <option value="yellow">노란색</option>
+                <option value="pink">핑크색</option>
+            </select><br>
+            <select name="selectcity" size="3">
+                <optgroup label="서울시">
+                    <option>강북구</option>
+                    <option selected>강서구</option>
+                    <option>강동구</option>
+                    <option>강남구</option>
+                </optgroup>
+                <optgroup label="경기도 성남시">
+                    <option>중원구</option>
+                    <option>분당구</option>
+                </optgroup>
+            </select><br>
             <input type="submit" value="확인"> <input type="button" value="Check">
-            <input type="image" src="./Images/button.jpg">
+            <input type="image" src="./Images/button.jpg"><button type="submit">버튼</button>
+            <button type="submit"><img src="./Images/button.jpg"></button>
+            
          </form>
     </body>
 </html>
