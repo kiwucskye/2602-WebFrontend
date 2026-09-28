@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>09월28일 테이블 학습</title>
+        <style>
+            table, td, th {
+                border : 1px solid red;
+            }
+            th {
+                background-color: blue;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th scope="col">번호</th><th scope="col">상품명</th>
+                <th scope="col">수량</th><th scope="col">가격</th>
+            </tr>
+            <tr>
+                <td scope="row">1</td><td>콜라</td><td>1개</td><td>1,500원</td>
+            </tr>
+            <tr>
+                <td scope="row">2</td><td>사이다</td><td>2개</td><td rowspan="2">1,000원</td>
+            </tr>
+            <tr>
+                <td scope="row">3</td><td>탄산수</td><td>3개</td>
+            </tr>
+            <tr>
+                <td>총금액</td><td colspan="3">6,500원</td>
+            </tr>
+        </table>
+        <table>
+            <caption>주문상품</caption>
+            <col style="width: 80;">
+            <colgroup span="2" style="width: 150px;"></colgroup>
+            <col style="width: 100px;">
+            <thead>
+                <th>번호</th><th>상품명</th><th>수량</th><th>가격</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td><td>콜라</td><td>1개</td><td>1,500원</td>
+                </tr>
+                <tr>
+                    <td>2</td><td>사이다</td><td>2개</td><td rowspan="2">1,000원</td>
+                </tr>
+                 <tr>
+                    <td>3</td><td>탄산수</td><td>3개</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>총금액</td><td colspan="3">6,500원</td>
+                </tr>
+            </tfoot>
+            
+        </table>
+    </body>
+</html>
