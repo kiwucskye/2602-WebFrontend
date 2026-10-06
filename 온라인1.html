@@ -30,6 +30,25 @@
             .room {
                 width: 500px;
             }
+            .b, .b td {
+                border: 1px solid blue
+            }
+            .gaipform, .gaipform td {
+                border: 1px solid black;
+            }
+            .gaipform {
+                width: 400px;
+            }
+            .gaip2 td {
+                border: 2px solid black;
+            }
+            .gaip2 th {
+                border: 2px solid black;
+                background-color: pink;
+            }
+            .mybtn {
+                text-align: center;
+            }
         </style>
     </head>
     <body>
@@ -88,5 +107,89 @@
             <tr><th>천혜향방</th><td>-</td><td>2인실</td></tr>
             <tr class="mygray"><th colspan="4">바깥채 전체를 렌트합니다.</th></tr>
         </table>
+        <br>
+        <table class="b">
+            <caption>브라우저의 종류</caption>
+            <tr>
+                <td>운영체제의 종류</td><td>브라우저의 종류</td><td>버전</td>
+            </tr>
+            <tr><td rowspan="5">Windows</td><td rowspan="2">Explorer</td><td>5.0</td></tr>
+            <tr><td>5.5</td></tr>
+            <tr><td rowspan="3">Netscape</td><td>5.0</td></tr>
+            <tr><td>6.0</td></tr>
+            <tr><td>7.0</td></tr>
+            <tr><td rowspan="5">Linux</td><td rowspan="3">Netscape</td><td>5.0</td></tr>
+            <tr><td>6.0</td></tr>
+            <tr><td>7.0</td></tr>
+            <tr><td>Mozilla</td><td>5.0</td></tr>
+            <tr><td colspan="2">K-browser</td></tr>
+        </table>
+        <table class="gaipform">
+            <caption>회원가입</caption>
+            <form name="gaip" action="process.php" method="post">
+                <tr><td>이름</td><td><input type="text" name="username"></td></tr>
+                <tr><td>아이디</td><td><input type="text" name="userid"></td></tr>
+                <tr><td>비밀번호</td><td><input type="password" name="mypass1"></td></tr>
+                <tr><td>비밀번호 확인</td><td><input type="password" name="mypass2"></td></tr>
+                <tr><td>이메일</td><td><input type="email" name="myemail"></td></tr>
+                <tr><td>취미</td>
+                    <td><input type="checkbox" name="c[]" value="reading">독서
+                        <input type="checkbox" name="c[]" value="cooking">요리
+                        <input type="checkbox" name="c[]" value="jogging">조깅
+                        <input type="checkbox" name="c[]" value="swimming">수영
+                        <input type="checkbox" name="c[]" value="sleeping">취침
+                    </td>
+                </tr>
+                <tr><td>전공</td>
+                    <td><input type="radio" name="major" value="kor">국어
+                        <input type="radio" name="major" value="eng">영어
+                        <input type="radio" name="major" value="math">수학
+                        <input type="radio" name="major" value="design">디자인
+                    </td>
+                </tr>
+                <tr>
+                    <td>통신사</td>
+                    <td>
+                        <select name="mobile">
+                            <option value="sk" selected>SKT</option>
+                            <option value="kt">KT</option> 
+                            <option value="lgu">LG U+</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><td colspan="2"><input type="submit" value="전송"> <input type="reset" value="초기화"></td></tr>
+            </form>
+        </table>
+        <br>
+        <form name="gaipform2" action="gaip_process.php" method="post">
+        <table class="gaip2">
+            <tr><th>사용자ID</th><td colspan="3"><input type="text" name="userid"> <input type="button" value="ID중복확인"></td></tr>
+            <tr><th>비밀번호</th><td><input type="password" name="userpass1"></td>
+                <th>비밀번호확인</th><td><input type="password" name="userpass2"></td></tr>
+            <tr><th>사용자 이름</th><td colspan="3"><input type="text" name="username"></td></tr>
+            <tr><th>주민등록번호</th><td colspan="3"><input type="text" name="jumin01">-<input type="text" name="jumin02"></td></tr>
+            <tr><th>생년월일</th><td><input type="text" name="birth"></td>
+                <th>성별</th><td><input type="checkbox" name="s[]" value="man">남자
+                <input type="checkbox" name="s[]" value="woman">여자</td></tr>
+            <tr><th>우편번호</th><td colspan="3"><input type="text" name="mailnum01"> -
+                <input type="text" name="mailnum02"> <button>우편번호검색</button></td></tr>
+            <tr><th>주소</th><td colspan="3"><input type="text"  size="60" name="myaddr01"></td></tr>
+            <tr><th>나머지주소</th><td colspan="3"><input type="text" name="myaddr02"></td></tr>
+            <tr><th>E-mail</th><td colspan="3"><input type="text" name="email01">@
+            <select name="email02">
+                <option disabled selected>선택하세요.</option>
+                <option value="daum">daum.net</option>
+                <option value="han">hanmail.net</option>
+                <option value="naver">naver.com</option>
+            </select></td></tr>
+            <tr><th>직업</th><td colspan="3">
+                <select name="myjob">
+                    <option value="com">컴퓨터/정보통신</option>
+                    <option value="free">프리랜서</option>
+                </select>
+            </td></tr>
+            <tr><td colspan="4" class="mybtn"><input type="submit" value="등록"> <input type="reset" value="취소"></td></tr>
+        </table>
+        </form>
     </body>
 </html>
