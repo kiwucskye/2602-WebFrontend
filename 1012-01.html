@@ -28,6 +28,23 @@
             div span{
                 color: yellow;
             }
+            .fonttest {
+                background-color: yellow;
+                width: 50%;
+                height: 50%;
+                color:red;
+                font-size: 30px;
+            }
+            .fonttest p {
+                font-size: 60%;
+            }
+            .fonttest p span {
+                font-size: 2em;
+                color: blue;
+            }
+            .remtest {
+                font-size: 2rem;
+            }
         </style>
     </head>
     <body>
@@ -36,6 +53,15 @@
         <div>
             <p>div 안에 있는 p태그입니다.</p>
             <span>스판태그입니다.</span>
+        </div>
+        <div class="fonttest">
+            폰트 크기 테스트를 합니다.
+            <h2>h2 태그</h2>
+            <p>여기는 p 태그입니다. 그리고 p 태그 안에 <span>스판 태그</span>가 있습니다.</p>
+        </div>
+        테스트합니다.
+        <div class="remtest">
+            rem 테스트합니다.
         </div>
     </body>
 </html>
