@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>11월 9일 수업</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .test::before {
+                content:'안녕하세요. ';
+            }
+            .test::after {
+                content:' 행복한 하루되세요!!!';
+            }
+            .h1:visited {
+                color:red;
+            }
+            .h2:link {
+                color:green;
+            }
+            .h1:hover {
+                color: gold;
+            }
+            .h1:active {
+                color:blue;
+            }
+            .h2:active {
+                color:black;
+            }
+            .input_name:focus {
+                color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="test">김예은입니다.</p>
+        <p><a href="http://www.daum.net" class="h1">다음</a></p>
+        <p><a href="http://naver.com" class="h2">네이버</a></p>
+        <form name="signform" method="post">
+            <p>이름 : <input type="text" name="username" class="input_name"></p>
+        </form>
+    </body>
+</html>
