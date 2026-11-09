@@ -32,6 +32,17 @@
             .input_name:focus {
                 color:green;
             }
+            #reading:checked + label {
+                color: red;
+                font-family: bold;
+                text-decoration: underline;
+            }
+            .c_id:disabled, .mybtn1:disabled {
+                background-color: #ccc;
+            }
+            .c_phone:enabled, .mybtn2:enabled {
+                background-color: gold;
+            }
         </style>
     </head>
     <body>
@@ -40,6 +51,11 @@
         <p><a href="http://naver.com" class="h2">네이버</a></p>
         <form name="signform" method="post">
             <p>이름 : <input type="text" name="username" class="input_name"></p>
+            <p><input type="checkbox" name="hobby" id="reading"><label for="reading">독서</label></p>
+            <p>아이디 : <input type="text" name="userid" class="c_id" disabled value="ttt"></p>
+            <p><button disabled class="mybtn1">버튼</button></p>
+            <p>전화번호 : <input type="text" name="userphone" class="c_phone"></p>
+            <p><button class="mybtn2">리셋</button></p>
         </form>
     </body>
 </html>
