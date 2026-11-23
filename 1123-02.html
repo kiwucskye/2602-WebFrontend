@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>원추형 그라데이션</title>
+        <style>
+            .outer_div {
+                width: 200px;
+                border: 1px solid black;
+                float: left;
+            }
+            .my_gradient_1 {
+                background-image: conic-gradient(red, yellow);
+                height: 150px;
+            }
+            .my_gradient_2 {
+                background-image: conic-gradient(red, yellow, green);
+                height: 150px;
+            }
+            .my_gradient_3 {
+                background-image: conic-gradient(red, yellow, green, blue);
+                height: 150px;
+            }
+            .my_gradient_4 {
+                background-image: conic-gradient(from 45deg, red, yellow);
+                height: 150px;
+            }
+            .my_gradient_5 {
+                background-image: conic-gradient(from 180deg, red, yellow);
+                height: 150px;
+            }
+            .my_gradient_6 {
+                background-image: conic-gradient(at top, red, yellow);
+                height: 150px;
+            }
+            .my_gradient_7 {
+                background-image: conic-gradient(at 20% 30%, red, yellow);
+                height: 150px;
+            }
+            .my_gradient_8 {
+                background-image: conic-gradient(red 20%, yellow 30%);
+                height: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer_div">
+            <div class="my_gradient_1"></div>
+            <p>conic(red, yellow)</p>
+        </div>
+        <div class="outer_div">
+            <div class="my_gradient_2"></div>
+            <p>conic(red, yellow, green)</p>
+        </div>
+        <div class="outer_div">
+            <div class="my_gradient_3"></div>
+            <p>conic(red, yellow, green, blue)</p>
+        </div>
+        <div class="outer_div">
+            <div class="my_gradient_4"></div>
+            <p>conic(from 45deg, red, yellow)</p>
+        </div>
+        <div class="outer_div">
+            <div class="my_gradient_5"></div>
+            <p>conic(from 180deg, red, yellow)</p>
+        </div>
+        <div class="outer_div">
+            <div class="my_gradient_6"></div>
+            <p>conic(at top, red, yellow)</p>
+        </div>
+        <div class="outer_div">
+            <div class="my_gradient_7"></div>
+            <p>conic(at 20% 30%, red, yellow)</p>
+        </div>
+        <div class="outer_div">
+            <div class="my_gradient_8"></div>
+            <p>conic(red 20%, yellow 30%)</p>
+        </div>
+    </body>
+</html>
