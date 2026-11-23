@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>border radius 연습</title>
+        <style>
+            .outer_div {
+                width: 200px;
+                height: 180px;
+                float:left;
+                border: 1px solid black;
+                padding-top: 20px;
+            }
+            .box {
+                width: 150px;
+                height: 150px;
+                background-color: pink;
+                margin: 0 auto;
+                text-align: center;
+                line-height: 120px;
+            }
+            .my_radius_1 {
+                border-radius: 20px;
+            }
+            .my_radius_2 {
+                border-radius: 50%;
+            }
+            .my_radius_3 {
+                width: 200px;
+                height: 50px;
+                border-radius: 25px;
+                line-height: 50px;
+            }
+            .my_radius_4 {
+                border-radius: 20px 40px 10px 30px;
+            }
+            .my_radius_5 {
+                border-radius: 20px 20px 0 0;
+            }
+            .my_radius_6 {
+                border-radius: 50% 20% / 10% 40%;
+            }
+            .my_radius_7 {
+                border-radius: 0 50% 50% 50%;
+            }
+            .my_radius_8 {
+                border-radius: 100px 0 0 0 ;
+            }
+            .my_radius_9 {
+                border-radius: 30% 0 0 0 ;
+            }
+            .my_radius_10 {
+                border-radius: 100px 0 0 0 / 20px 0 0 0 ;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer_div">
+            <div class="box my_radius_1">Box</div>
+        </div>
+        <div class="outer_div">
+            <div class="box my_radius_2">Box</div>
+        </div>
+        <div class="outer_div">
+            <div class="box my_radius_3">Box</div>
+        </div>
+        <div class="outer_div">
+            <div class="box my_radius_4">Box</div>
+        </div>
+        <div class="outer_div">
+            <div class="box my_radius_5">Box</div>
+        </div>
+        <div class="outer_div">
+            <div class="box my_radius_6">Box</div>
+        </div>
+        <div class="outer_div">
+            <div class="box my_radius_7">Box</div>
+        </div>
+        <div class="outer_div">
+            <div class="box my_radius_8">Box</div>
+        </div>
+        <div class="outer_div">
+            <div class="box my_radius_9">Box</div>
+        </div>
+        <div class="outer_div">
+            <div class="box my_radius_10">Box</div>
+        </div>
+    </body>
+</html>
